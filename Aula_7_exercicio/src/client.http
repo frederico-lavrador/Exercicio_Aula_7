@@ -1,0 +1,34 @@
+### Create User ###
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Teste_2",
+    "email": "teste3@email.com",
+    "tel": "999999999"
+}
+
+### Get all users ###
+
+GET http://localhost:3000/users
+
+### Get specific user ###
+
+GET http://localhost:3000/users/
+
+### Update user ###
+
+PUT http://localhost:3000/users/1375290a-fa09-4bd4-8ff2-ac8e673d4d20
+Content-Type: application/json
+
+{
+    "name": "new_teste_1",
+    "email": "new_teste@email.com",
+    "tel": "new123456",
+    "address": "new_address"
+}
+
+### Delete user ###
+
+DELETE http://localhost:3000/users/1375290a-fa09-4bd4-8ff2-ac8e673d4d20
